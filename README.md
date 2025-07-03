@@ -4,9 +4,7 @@
 
 ## Overview
 
-Adds a new item "Dalaran Hearthstone" (item id id 666) that teleports the player to Dalaran and has a 30 minute cooldown, inspired by Legion's Dalaran Hearthstone. The item uses a new spell also called Dalaran Hearthstone (spell id 666) behind the scenes.
-
-Let's be honest here: you could just run a `.teleport dalaran` GM command. But, I actually like playing the game and not scripting my way into a funless experience.
+Adds a new "Dalaran Hearthstone" item that teleports the player to Dalaran and has a 30 minute cooldown, inspired by Legion's Dalaran Hearthstone.
 
 ## How to install
 
@@ -27,7 +25,7 @@ git clone https://github.com/abracadaniel222/mod-dalaran-hearthstone.git
 
 ### Client installation
 
-1. Copy the Patch-4.mpq file located in the `data/patch/client` folder into your World of Warcraft 3.3.5a client's `Data` folder. This file contains the Item.dbc and Spell.dbc files modified to contain a new Item and a new Spell entry. If you already have a Patch-4.mpq in your Data folder, try using a different number.
+1. Copy the Patch-4.mpq file located in the `data/patch/client` folder into your World of Warcraft 3.3.5a client's `Data` folder. This file contains modified the Item.dbc and Spell.dbc. If you already have a Patch-4.mpq in your Data folder, try using a different number.
 
 ## How to use
 
@@ -44,6 +42,6 @@ Run the `.additem 666 1` command to have the Dalaran Hearthstone added to your i
 
 ### What is in the DBC and MPQ files?
 
-- Item.dbc: duplicated Hearthstone item (id 6948) into a new Dalaran Hearthstone item (id 666). All other items were kept as-is.
-- Spell.dbc: duplicated Hearthstone spell (id 8690) into a new Dalaran Hearthstone spell (id 666) with some custom attributes. All other spells were kept as-is.
-- patch-4.mpq: Contains a DBFilesClient folder with the modified Item.dbc and Spell.dbc inside
+- **Item.dbc**: duplicated Hearthstone item (id 6948) into a new Dalaran Hearthstone item (id 666). All other items were kept as-is.
+- **Spell.dbc**: duplicated Hearthstone spell (id 8690) into a new Dalaran Hearthstone spell (id 666) with some custom attributes. All other spells were kept as-is.
+- **Patch-4.mpq**: Contains a DBFilesClient folder with the modified Item.dbc and Spell.dbc inside
