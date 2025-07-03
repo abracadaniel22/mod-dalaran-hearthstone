@@ -38,6 +38,13 @@ Run the `.additem 666 1` command to have the Dalaran Hearthstone added to your i
 ## Credits
 - AzerothCore and the WoW Modding Community Discord channel
 
+## Screenshots
+
+![2025-07-03-16-13-12](https://github.com/user-attachments/assets/7eb64edc-98ac-4056-936f-17d2479cfbe8)
+
+![2025-07-03-16-13-28](https://github.com/user-attachments/assets/c3e150f6-2e69-450f-b619-76b0e25ff656)
+
+
 ## Extra info
 
 ### What is in the DBC and MPQ files?
