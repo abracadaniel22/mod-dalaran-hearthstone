@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# The purpose of this file is to the base SQL files and any new SQL files after module updates.
+# I am not sure if this file is required or if the server would find and run the sql files automatically.
+
+#
+# BASE
+#
+
+DB_WORLD_CUSTOM_PATHS+=(
+	"$MOD_DALARAN_HEARTHSTONE_ROOT/data/sql/world/base/"
+)
+
+#
+# UPDATES
+#
+
+DB_WORLD_UPDATE_PATHS+=(
+	"$MOD_DALARAN_HEARTHSTONE_ROOT/data/sql/world/updates/"
+)
+
