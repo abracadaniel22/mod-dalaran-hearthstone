@@ -12,7 +12,8 @@ This mod requires both server and client files. The steps below will replace Spe
 
 ### Server installation
 
-> **Warning**: the installation script will replace your Spell.dbc and Item.dbc on the server. It will attempt to automatically create backup copies of those files (Spell.dbc.backup and Item.dbc.backup). If you don't want the installation to replace the dbc files, add the `-DMOD_DALARAN_HEARTHSTONE_UPDATE_DBC=0` argument to the `cmake` command.
+> [!WARNING]
+> The installation script will replace your Spell.dbc and Item.dbc on the server. It will attempt to automatically create backup copies of those files (Spell.dbc.backup and Item.dbc.backup). If you don't want the installation to replace the dbc files, add the `-DMOD_DALARAN_HEARTHSTONE_UPDATE_DBC=0` argument to the `cmake` command.
 
 1. Clone this repository into the modules folder of your AzerothCore installation
 ```
