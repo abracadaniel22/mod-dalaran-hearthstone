@@ -8,7 +8,7 @@ Adds a new "Dalaran Hearthstone" item that teleports the player to Dalaran and h
 
 ## How to install
 
-This mod requires both server and client files.
+This mod requires both server and client files. The steps below will replace Spell.dbc and Item.dbc on server and client. If you already have customizations on those files and want to retain then, you can use the CSV files located in `data/csv` and merge them in your files instead.
 
 ### Server installation
 
@@ -20,22 +20,23 @@ git clone https://github.com/abracadaniel222/mod-dalaran-hearthstone.git
 ```
 2. Re-run cmake
 3. Re-build the project. For more information, refer to the [AzerothCore Installation Guide](https://www.azerothcore.org/wiki/installation) and [Installing a Module](https://www.azerothcore.org/wiki/installing-a-module) pages.
-4. The DBC files should be automatically installed. If not, you would need to manually copy them into the `build/data/dbc` server folder.
+4. The DBC files should be automatically installed. If not, you would need to manually copy them from `data/patch/server` into the `build/data/dbc` server folder.
 4. Start the server. The database should be automatically updated. If not, you would need to manually run the .sql files found in `data/sql`.
 
 ### Client installation
 
-1. Copy the Patch-4.mpq file located in the `data/patch/client` folder into your World of Warcraft 3.3.5a client's `Data` folder. This file contains modified the Item.dbc and Spell.dbc. If you already have a Patch-4.mpq in your Data folder, try using a different number.
+1. Copy the Patch-4.mpq file located in the `data/patch/client` folder into your World of Warcraft 3.3.5a client's `Data` folder. This file contains the two modified DBC files. If you already have a Patch-4.mpq in your Data folder, try using a different number.
 
 ## How to use
 
-Run the `.additem 666 1` command to have the Dalaran Hearthstone added to your inventory.
+Run the `.additem 666 1` command to have a Dalaran Hearthstone added to your inventory.
 
 ## Future work
 
-- Ability to get the Dalaran Hearthstone from an inkeeper.
+- Ability to get a Dalaran Hearthstone from an inkeeper.
 
 ## Credits
+
 - AzerothCore and the WoW Modding Community Discord channel
 
 ## Screenshots
