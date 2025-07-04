@@ -12,7 +12,7 @@ This mod requires both server and client files. The steps below will replace Spe
 
 ### Server installation
 
-**Warning**: the installation script will replace your Spell.dbc and Item.dbc on the server. It will attempt to automatically create backup copies of those files (Spell.dbc.backup and Item.dbc.backup).
+> **Warning**: the installation script will replace your Spell.dbc and Item.dbc on the server. It will attempt to automatically create backup copies of those files (Spell.dbc.backup and Item.dbc.backup). If you don't want the installation to replace the dbc files, add the `-DMOD_DALARAN_HEARTHSTONE_UPDATE_DBC=0` argument to the `cmake` command.
 
 1. Clone this repository into the modules folder of your AzerothCore installation
 ```
@@ -20,7 +20,7 @@ git clone https://github.com/abracadaniel222/mod-dalaran-hearthstone.git
 ```
 2. Re-run cmake
 3. Re-build the project. For more information, refer to the [AzerothCore Installation Guide](https://www.azerothcore.org/wiki/installation) and [Installing a Module](https://www.azerothcore.org/wiki/installing-a-module) pages.
-4. The DBC files should be automatically installed. If not, you would need to manually copy them from `data/patch/server` into the `build/data/dbc` server folder.
+4. The DBC files should be automatically installed (unless you turned it off in the `cmake` command). If not, you would need to manually copy them from `data/patch/server` into the `build/data/dbc` server folder.
 4. Start the server. The database should be automatically updated. If not, you would need to manually run the .sql files found in `data/sql`.
 
 ### Client installation
