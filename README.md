@@ -17,7 +17,7 @@ This mod requires both server and client files. The steps below will replace Spe
 
 1. Clone this repository into the modules folder of your AzerothCore installation
 ```
-git clone https://github.com/abracadaniel222/mod-dalaran-hearthstone.git
+git clone https://github.com/abracadaniel22/mod-dalaran-hearthstone.git
 ```
 2. Re-run `cmake`
 3. Re-build the project. For more information, refer to the [AzerothCore Installation Guide](https://www.azerothcore.org/wiki/installation) and [Installing a Module](https://www.azerothcore.org/wiki/installing-a-module) pages.
