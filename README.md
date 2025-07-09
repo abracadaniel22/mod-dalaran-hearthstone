@@ -32,8 +32,6 @@ git clone https://github.com/abracadaniel222/mod-dalaran-hearthstone.git
 
 You can acquire a Dalaran Hearthstone from from Innkeeper Allison in Stormwind, Innkeeper Gryshka in Orgrimmar, or Amisi Azuregaze in Dalaran.
 
-GMs can run the `.additem 666` command to have a Dalaran Hearthstone added to the inventory.
-
 ## Credits
 
 - AzerothCore and the WoW Modding Community Discord channel
