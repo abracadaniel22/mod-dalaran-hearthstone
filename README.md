@@ -51,3 +51,7 @@ You can acquire a Dalaran Hearthstone from Innkeeper Allison in Stormwind, Innke
 - **Spell.dbc**: duplicated Hearthstone spell (id 8690) into a new Dalaran Hearthstone spell (id 666) with some custom attributes. All other spells were kept as-is.
 - **SpellCategory.dbc**: created a new spell category (id 666) to avoid the client applying cooldown in the Dalaran Hearthstone when the regular Hearthstone is used. All other spell categories were kept as-is.
 - **Patch-4.mpq**: Contains a DBFilesClient folder with the modified DBC files inside.
+
+## Reporting bugs and contributing
+
+Bug reports and contributions are welcome. Please go to the Issues tab to submit a bug or enhancement request, or submit your contribution via Pull Request.
