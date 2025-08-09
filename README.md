@@ -4,16 +4,16 @@
 
 ## Overview
 
-Adds a new "Dalaran Hearthstone" item that teleports the player to Dalaran and has a 30 minute cooldown, inspired by Legion's Dalaran Hearthstone.
+Adds a new "Dalaran Hearthstone" item that teleports the player to Dalaran and has a 30 minute cooldown, inspired by Legion's Dalaran Hearthstone, with the same unique icon and spell animation.
 
 ## How to install
 
-This mod requires both server and client files. The steps below will replace Spell.dbc, Item.dbc and SpellCategory.dbc on server and client. If you already have customizations on those files and want to retain then, you can use the CSV files located in `data/csv` and merge them in your files instead.
+This mod requires both server and client files. The steps below will replace all the required files on server and client. If you already have customizations on those files (see the file list below) and want to retain then, you can use the CSV files located in `data/csv` and merge them in your files instead.
 
 ### Server installation
 
 > [!WARNING]
-> The installation script will replace some DBC files on the server. It will attempt to automatically create backup copies of those files (Spell.dbc.backup and so on). If you don't want the installation to replace the DBC files, add the `-DMOD_DALARAN_HEARTHSTONE_UPDATE_DBC=0` argument to the `cmake` command.
+> The installation script will replace some DBC files on the server. It will attempt to automatically create backup copies of those files (Spell.dbc.backup and so on). If you don't want the installation script to replace the DBC files, add the `-DMOD_DALARAN_HEARTHSTONE_UPDATE_DBC=0` argument to the `cmake` command.
 
 1. Clone this repository into the modules folder of your AzerothCore installation
 ```
@@ -26,7 +26,7 @@ git clone https://github.com/abracadaniel22/mod-dalaran-hearthstone.git
 
 ### Client installation
 
-1. Copy the Patch-4.mpq file located in the `data/patch/client` folder into your World of Warcraft 3.3.5a client's `Data` folder. This file contains the modified DBC files. If you already have a Patch-4.mpq in your Data folder, try using a different number.
+1. Copy the Patch-4.mpq file located in the `data/patch/client` folder into your World of Warcraft 3.3.5a client's `Data` folder. This file contains the modified DBC files and icon. If you already have a Patch-4.mpq in your Data folder, try using a different number.
 
 ## How to use
 
@@ -47,10 +47,12 @@ You can acquire a Dalaran Hearthstone from Innkeeper Allison in Stormwind, Innke
 
 ### What is in the DBC and MPQ files?
 
-- **Item.dbc**: duplicated Hearthstone item (id 6948) into a new Dalaran Hearthstone item (id 666). All other items were kept as-is.
+- **ItemDisplayInfo.dbc**: duplicated entry 48007 (rune icon) into a new entry (id 666) to hold the inv_misc_rune_15 item icon.
+- **Item.dbc**: duplicated Hearthstone item (id 6948) into a new Dalaran Hearthstone item (id 666), using the ItemDisplayInfo id 666.
+- **SpellIcon.dbc**: created a new entry (id 666) to hold the inv_misc_rune_15 spell icon.
 - **Spell.dbc**: duplicated Hearthstone spell (id 8690) into a new Dalaran Hearthstone spell (id 666) with some custom attributes. All other spells were kept as-is.
 - **SpellCategory.dbc**: created a new spell category (id 666) to avoid the client applying cooldown in the Dalaran Hearthstone when the regular Hearthstone is used. All other spell categories were kept as-is.
-- **Patch-4.mpq**: Contains a DBFilesClient folder with the modified DBC files inside.
+- **Patch-4.mpq**: Contains a DBFilesClient folder with the modified DBC files inside as well as the new icon.
 
 ## Reporting bugs and contributing
 
