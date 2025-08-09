@@ -38,10 +38,9 @@ You can acquire a Dalaran Hearthstone from Innkeeper Allison in Stormwind, Innke
 
 ## Screenshots
 
-![2025-07-03-16-13-12](https://github.com/user-attachments/assets/7eb64edc-98ac-4056-936f-17d2479cfbe8)
+<img width="392" height="291" alt="00" src="https://github.com/user-attachments/assets/33f0612a-e56f-48cb-b458-76af5e311629" />
 
-![2025-07-03-16-13-28](https://github.com/user-attachments/assets/c3e150f6-2e69-450f-b619-76b0e25ff656)
-
+<img width="810" height="693" alt="01" src="https://github.com/user-attachments/assets/cdae6180-3c47-46d0-977f-a67d8c493092" />
 
 ## Extra info
 
