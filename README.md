@@ -4,11 +4,11 @@
 
 ## Overview
 
-Adds a new "Dalaran Hearthstone" item that teleports the player to Dalaran and has a 30 minute cooldown, inspired by Legion's Dalaran Hearthstone, with the same unique icon and spell animation.
+Adds a new "Dalaran Hearthstone" item that teleports the player to Dalaran and has a 30 minute cooldown. This mod is inspired by Legion's Dalaran Hearthstone and it uses the same unique icon and spell animation.
 
 ## How to install
 
-This mod requires both server and client files. The steps below will replace all the required files on server and client. If you already have customizations on those files (see the file list below) and want to retain then, you can use the CSV files located in `data/csv` and merge them in your files instead.
+This mod requires both server and client files. The steps below will replace all the required files on server and client. If you already have customizations on those files and want to retain then, you can check te list of modified files below and use the CSV files located in `data/csv` to merge them in your files instead of replacing the entire files.
 
 ### Server installation
 
